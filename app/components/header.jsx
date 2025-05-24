@@ -55,7 +55,7 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="#"
+              href="/about"
               className="text-gray-600 hover:text-emerald-500 transition-colors"
             >
               About
