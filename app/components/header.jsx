@@ -61,7 +61,7 @@ export default function Header() {
               About
             </Link>
             <Link
-              href="#"
+              href="/services"
               className="text-gray-600 hover:text-emerald-500 transition-colors"
             >
               Services
