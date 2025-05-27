@@ -1,7 +1,7 @@
 import Image from "next/image";
 import image from "./images/doc.jpg";
 
-export default function Home() {
+export default function Hero() {
   return (
     <section className="relative pt-32" style={{ height: "400px" }}>
       {/* Background image layer - stays exactly as you had it */}
