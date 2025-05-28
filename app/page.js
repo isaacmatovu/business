@@ -1,17 +1,16 @@
-import BusinessProcess from "./components/about";
-import ServicesSection from "./components/cards";
-import BusinessCTA from "./components/contactfooter";
-import DownSection from "./components/downhero";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Hero from "./components/hero";
-import ProjectsSection from "./components/projectTitle";
-import ProductCarousel from "./components/slider";
+import BusinessProcess from "./components/Home/about";
+import ServicesSection from "./components/Home/cards";
+import BusinessCTA from "./components/Home/contactfooter";
+import DownSection from "./components/Home/downhero";
+import Hero from "./components/Home/hero";
+import HeroBackground from "./components/Home/HeroBackground";
+import ProjectsSection from "./components/Home/projectTitle";
+import ProductCarousel from "./components/Home/slider";
 
 export default function Home() {
   return (
     <div>
-      <Header />
+      <HeroBackground />
       <ServicesSection />
       <Hero />
       <BusinessProcess />
@@ -19,7 +18,6 @@ export default function Home() {
       <ProductCarousel />
       <DownSection />
       <BusinessCTA />
-      <Footer />
     </div>
   );
 }
