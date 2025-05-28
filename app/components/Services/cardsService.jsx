@@ -1,6 +1,6 @@
 import { MessageSquare, Monitor, Network, ThumbsUp } from "lucide-react";
 
-export default function Component() {
+export default function ServiceCards() {
   const services = [
     {
       icon: MessageSquare,
