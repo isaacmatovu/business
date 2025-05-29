@@ -29,27 +29,31 @@ export default function AboutSection() {
             working together to create a single piece of content.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 pt-8">
-            <div className="flex flex-col items-center">
-              <div className="flex justify-center items-center bg-green-600 px-20 py-4 rounded-3xl hover:bg-blue-400 transition-colors duration-300 mb-2 w-24 text-center">
-                <p className="text-white text-4xl">16+</p>
+            <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-row w-full">
+              <div className="flex flex-col items-center">
+                <div className="flex justify-center items-center bg-green-600 px-20 py-4 rounded-3xl hover:bg-blue-400 transition-colors duration-300 mb-2 w-24 text-center">
+                  <p className="text-white text-4xl">16+</p>
+                </div>
+                <p className="text-lg sm:text-xl text-center">
+                  Patients reached
+                </p>
               </div>
-              <p className="text-lg sm:text-xl text-center">Patients reached</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="flex justify-center items-center bg-green-600 px-20 py-4 rounded-3xl hover:bg-blue-400 transition-colors duration-300 mb-2 w-24 text-center">
-                <p className="text-white text-4xl">1000+</p>
+              <div className="flex flex-col items-center">
+                <div className="flex justify-center items-center bg-green-600 px-20 py-4 rounded-3xl hover:bg-blue-400 transition-colors duration-300 mb-2 w-24 text-center">
+                  <p className="text-white text-4xl">1000+</p>
+                </div>
+                <p className="text-lg sm:text-xl text-center">
+                  Customers attained
+                </p>
               </div>
-              <p className="text-lg sm:text-xl text-center">
-                Customers attained
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="flex justify-center items-center bg-green-600 px-20 py-4 rounded-3xl hover:bg-blue-400 transition-colors duration-300 mb-2 w-24 text-center">
-                <p className="text-white text-4xl">4+</p>
+              <div className="flex flex-col items-center">
+                <div className="flex justify-center items-center bg-green-600 px-20 py-4 rounded-3xl hover:bg-blue-400 transition-colors duration-300 mb-2 w-24 text-center">
+                  <p className="text-white text-4xl">4+</p>
+                </div>
+                <p className="text-lg sm:text-xl text-center">
+                  Referral hospitals
+                </p>
               </div>
-              <p className="text-lg sm:text-xl text-center">
-                Referral hospitals
-              </p>
             </div>
           </div>
         </div>
