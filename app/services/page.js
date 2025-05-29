@@ -13,7 +13,7 @@ export default function Page() {
       <ServiceCards />
       <HeroCards />
       <GreenCard />
-      <div className="relative z-10 -mt-11 sm:-mt-28">
+      <div className="relative z-10  sm:-mt-20">
         <BusinessCTA />
       </div>
     </div>
