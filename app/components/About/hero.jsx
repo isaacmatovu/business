@@ -3,7 +3,7 @@ import image from "./images/doc.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32" style={{ height: "400px" }}>
+    <section className="relative pt-32" style={{ height: "500px" }}>
       {/* Background image layer - stays exactly as you had it */}
       <div className="absolute inset-0 z-0">
         <Image
