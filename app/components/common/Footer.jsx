@@ -274,14 +274,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Download Button - Positioned Absolutely */}
-        <div className="absolute top-4 right-4 md:top-6 md:right-6">
-          <Link href="#" className="text-gray-400 hover:text-[#4eca78]">
-            <Download size={24} />
-            <span className="sr-only">Download</span>
-          </Link>
-        </div>
       </div>
     </footer>
   );
