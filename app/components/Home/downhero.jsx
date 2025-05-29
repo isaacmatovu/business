@@ -31,7 +31,7 @@ export default function DownSection() {
 
           {/* Testimonials heading */}
           <h3 className="text-emerald-500 tracking-wider mb-4 uppercase font-medium">
-            O U R T E S T I M O N I A L S
+            O U R  T E S T I M O N I A L S
           </h3>
 
           <h2 className="text-5xl font-bold mb-6">Our happy customers</h2>
