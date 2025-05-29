@@ -22,10 +22,10 @@ export default function HeroCards() {
         {/* Text content */}
         <div className="text-white text-center w-full max-w-7xl px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
-            Your Title Here
+            lets transform your business
           </h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 md:mb-12 px-2">
-            Your description text goes here
+            We have worked with clients allover the world
           </p>
 
           {/* Process steps */}
@@ -60,7 +60,7 @@ export default function HeroCards() {
                   />
                 </div>
                 {/* Connecting line to next step */}
-                <div className="hidden lg:block absolute top-1/2 left-1/2 w-full h-0.5 bg-emerald-500 transform -translate-y-1/2"></div>
+                <div className="hidden lg:block absolute top-1/2 left-1/2y w-full h-0.5 bg-emerald-500 transform -translate-y-1/2"></div>
               </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2">
                 Start Designing
