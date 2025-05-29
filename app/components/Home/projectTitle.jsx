@@ -1,11 +1,4 @@
-import {
-  ChevronLeft,
-  ChevronRight,
-  ImageIcon,
-  MessageCircle,
-  ArrowUp,
-  TvMinimalPlay,
-} from "lucide-react";
+import { MessageCircle, ArrowUp, TvMinimalPlay } from "lucide-react";
 
 export default function ProjectsSection() {
   return (
