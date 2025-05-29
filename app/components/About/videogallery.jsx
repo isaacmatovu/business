@@ -11,7 +11,7 @@ export default function VideoPlayer() {
   // Default values
   const thumbnailUrl = "data:image/jpeg;base64,..."; // your base64 image
   const videoTitle = "Product Overview";
-  const videoUrl = "https://www.youtube.com/watch?v=oObg8rRXZVM&list=PPSV";
+  const videoUrl = "/videos/dancing.mp4"; // Ensure this file exists in public/videos/
 
   const handlePlayClick = () => {
     setIsPlaying(true);
@@ -20,36 +20,32 @@ export default function VideoPlayer() {
   const handleClose = () => {
     if (videoRef.current) {
       videoRef.current.pause();
+      videoRef.current.currentTime = 0; // Reset to start
     }
     setIsPlaying(false);
   };
 
   useEffect(() => {
-    // When isPlaying changes to true, attempt to play the video
     if (isPlaying && videoRef.current) {
       const playPromise = videoRef.current.play();
 
-      // Handle potential play() rejection
-      if (playPromise !== undefined) {
-        playPromise.catch((error) => {
-          console.error("Playback failed:", error);
-          setIsPlaying(false);
-        });
-      }
+      playPromise.catch((error) => {
+        console.error("Playback failed:", error);
+        setIsPlaying(false);
+      });
     }
   }, [isPlaying]);
 
   return (
-    <div className="relative rounded-lg overflow-hidden shadow-lg w-full max-w-4xl mx-auto">
+    <div className="relative rounded-lg overflow-hidden shadow-lg w-[90%] max-w-4xl mx-auto aspect-video bg-black ">
       {!isPlaying ? (
         <>
           {/* Thumbnail image */}
           <Image
             src={thumbnailUrl}
             alt="Video thumbnail"
-            width={1200}
-            height={675}
-            className="w-full h-auto aspect-video object-cover"
+            fill
+            className="object-cover"
             priority
           />
 
@@ -70,13 +66,13 @@ export default function VideoPlayer() {
           </div>
         </>
       ) : (
-        <div className="relative">
+        <div className="relative w-full h-full">
           {/* Video player */}
           <video
             ref={videoRef}
-            className="w-full h-auto"
+            className="w-full h-full object-contain"
             controls
-            playsInline // important for mobile browsers
+            playsInline
           >
             <source src={videoUrl} type="video/mp4" />
             Your browser does not support the video tag.
