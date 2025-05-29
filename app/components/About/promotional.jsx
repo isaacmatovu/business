@@ -24,7 +24,7 @@ export default function Banner() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex items-center justify-between px-8 py-12 max-w-7xl mx-auto">
+      <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between px-8 py-12 max-w-7xl mx-auto gap-y-6">
         {/* Left side - Icon */}
         <div className="flex-shrink-0">
           <div className="w-24 h-24 bg-white rounded-2xl flex items-center justify-center shadow-lg">
