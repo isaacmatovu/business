@@ -12,7 +12,7 @@ export default function NavBar() {
 
   return (
     <div className="w-full sticky top-0 z-50">
-      <nav className="flex items-center justify-between bg-gradient-to-b from-emerald-400 to-teal-600 text-white text-xl sm:text-2xl py-4 px-4 sm:px-8 border-r-4 rounded-r-full border-l-4 rounded-l-full">
+      <nav className="flex items-center justify-between bg-gradient-to-b from-emerald-400 to-teal-600 text-white text-xl sm:text-2xl py-4 px-4 sm:px-8 sm:border-r-4 sm:rounded-r-full sm:border-l-4 sm:rounded-l-full">
         {/* Logo or brand name can go here on the left */}
         <div className="sm:hidden"></div>{" "}
         {/* Empty div for spacing on mobile */}
