@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Arise Medicime",
+  title: "Arise Medicine",
   description: "We treat you like family",
 };
 
